@@ -66,7 +66,7 @@ const mapStateToProps = state => {
   
 const mapDispatchToProps = dispatch => ({
     conversationChanged: conversationId => dispatch(conversationChanged(conversationId)),
-    onMessageSubmitted: messageText => { dispatch(newMessageAdded(messageText)); },
+    onMessageSubmitted: (messageText, attachedFiles) => { dispatch(newMessageAdded(messageText, attachedFiles)); },
     onDeleteConversation: () => { dispatch(conversationDeleted()); },
     loadConversations: () => { dispatch(conversationsRequested())}
 });

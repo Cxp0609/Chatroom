@@ -11,8 +11,9 @@ export const conversationDeleted = () => ({
     type: 'DELETE_CONVERSATION'
 });
 
-export const newMessageAdded = textMessage =>({
+export const newMessageAdded = (textMessage, attachedFiles = []) =>({
     type: 'NEW_MESSAGE_ADDED',
-    textMessage
+    textMessage,
+    attachedFiles
 });
 
