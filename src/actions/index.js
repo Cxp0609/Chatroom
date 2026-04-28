@@ -11,8 +11,22 @@ export const conversationDeleted = () => ({
     type: 'DELETE_CONVERSATION'
 });
 
-export const newMessageAdded = textMessage =>({
+export const newMessageAdded = (textMessage, attachedFiles = []) =>({
     type: 'NEW_MESSAGE_ADDED',
-    textMessage
+    textMessage,
+    attachedFiles
 });
 
+export const apiResponseRequested = () => ({
+    type: 'API_RESPONSE_REQUESTED'
+});
+
+export const apiResponseReceived = (messageText) => ({
+    type: 'API_RESPONSE_RECEIVED',
+    messageText
+});
+
+export const apiResponseFailed = (error) => ({
+    type: 'API_RESPONSE_FAILED',
+    error
+});

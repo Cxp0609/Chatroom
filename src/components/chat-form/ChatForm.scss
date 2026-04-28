@@ -6,13 +6,69 @@ $chat-form-top-border: darken($accent-color, 12.16);
 
 #chat-form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   grid-area: chat-form;
   background: $accent-color;
   border-radius: 0 0 10px 0;
   border-top: 1px solid $chat-form-top-border;
-  padding-left: 42px;
-  padding-right: 22px;
+  padding: 0;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &.drag-active {
+    background: lighten($accent-color, 5%);
+    border-top: 2px solid $primary-color;
+    
+    &::before {
+      content: 'Drop files here';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.6rem;
+      color: $primary-color;
+      font-weight: 600;
+      pointer-events: none;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 40px;
+      border-radius: 8px;
+      border: 2px dashed $primary-color;
+    }
+  }
+
+  .file-attachments-container {
+    padding: 15px 42px 8px 42px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid darken($accent-color, 5%);
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: darken($accent-color, 3%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: darken($accent-color, 10%);
+      border-radius: 3px;
+
+      &:hover {
+        background: darken($accent-color, 15%);
+      }
+    }
+  }
+
+  .chat-form-input-row {
+    display: flex;
+    align-items: center;
+    padding-left: 42px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   input {
     flex: 1 0 0;
