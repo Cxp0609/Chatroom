@@ -7,7 +7,6 @@ const delay = (ms) => new Promise(res => setTimeout(res, ms));
 const ANTHROPIC_API_KEY = process.env.REACT_APP_ANTHROPIC_API_KEY || '';
 const anthropic = new Anthropic({
   apiKey: ANTHROPIC_API_KEY,
-  baseURL: 'https://openrouter.ai/api/v1',
   dangerouslyAllowBrowser: true
 });
 // Helper function to format dates to show actual system time
@@ -388,7 +387,7 @@ export function* handleUserMessage() {
 
       // Call Claude Sonnet 4.6 API
       const response = yield anthropic.messages.create({
-        model: 'anthropic-claude-sonnet-4.6',
+        model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         system: 'You are a helpful assistant. Respond clearly and concisely.',
         messages: formattedMessages
