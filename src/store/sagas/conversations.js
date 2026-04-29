@@ -58,82 +58,8 @@ const conversations = [
         imageAlt: 'Daryl Duckmanton',
         title: 'ChatRoom 1',
         createdAt: formatDate(0, 0, 0, 0), // 2 hours ago
-        latestMessageText: 'This is a message',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Ok then',
-                createdAt: formatDate(0, 0, 0, 0), // 2 hours ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/daryl.png'),
-                imageAlt: 'Daryl Duckmanton',
-                messageText: `
-                    Yeah I think it's best we do that. Otherwise things won't work well at all. 
-                    I'm adding more text here to test the sizing this material as well.
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 2 hours 5 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Thank I appreciate that.',
-                createdAt: formatDate(0, 0, 0, 0), // 1 day ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/daryl.png'),
-                imageAlt: 'Daryl Duckmanton',
-                messageText: `
-                    I can archive this for you if you like?
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 1 day 15 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: `
-                    Can this be recorded?
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 1 day 1 hour ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/daryl.png'),
-                imageAlt: 'Daryl Duckmanton',
-                messageText: `
-                    I'm just in the process of finishing off the
-                    last pieces of material for the course.
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 1 day 2 hours ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'How do I finish this work??',
-                createdAt: formatDate(0, 0, 0, 0), // 3 days ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/daryl.png'),
-                imageAlt: 'Daryl Duckmanton',
-                messageText: ' Hey mate what\'s up?',
-                createdAt: formatDate(0, 0, 0, 0), // 3 days 30 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hello',
-                createdAt: formatDate(0, 0, 0, 0), // 3 days 1 hour ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     {
         id: '2', 
@@ -141,84 +67,8 @@ const conversations = [
         imageAlt: 'Kim O\'Neil',
         title: 'ChatRoom 2',
         createdAt: formatDate(0, 0, 0, 0), // 8 days ago
-        latestMessageText: 'Ok fair enough. Well good talking to you.',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Ok fair enough. Well good talking to you.',
-                createdAt: formatDate(0, 0, 0, 0), // 8 days ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/kim.jpeg'),
-                imageAlt: 'Kim O\'Neil',
-                messageText: `
-                    Not sure exactly yet. It will be next year sometime. Probably late.
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 8 days 10 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Yeah I know. But oh well. So when is the big date?',
-                createdAt: formatDate(0, 0, 0, 0), // 9 days ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/kim.jpeg'),
-                imageAlt: 'Kim O\'Neil',
-                messageText: `
-                    Well I know you like doing that stuff. But honestly I think
-                    you are already really talented. It's a shame you haven't found
-                    what you are looking for yet.
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 15 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: `
-                    I'm doing ok. Just working on building some applications to
-                    bulk up my resume, so I can get a better job.
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 1 hour ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/kim.jpeg'),
-                imageAlt: 'Kim O\'Neil',
-                messageText: `
-                    I've just been really busy at work myself, looking to get
-                    married sometime next year too. How are you going?
-                `,
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 1 hour 20 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Yes it has been a little while',
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 2 hours ago
-                isMyMessage: true
-            },
-            {
-                imageUrl: require('../../images/profiles/kim.jpeg'),
-                imageAlt: 'Kim O\'Neil',
-                messageText: 'Hey!!!! Have not spoken to you for a while',
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 2 hours 10 mins ago
-                isMyMessage: false
-            },
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi Kim?',
-                createdAt: formatDate(0, 0, 0, 0), // 9 days 2 hours 15 mins ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     {
         id: '3', 
@@ -226,16 +76,8 @@ const conversations = [
         imageAlt: 'John Anderson',
         title: 'ChatRoom 3',
         createdAt: formatDate(0, 0, 0, 0), // 1 week ago
-        latestMessageText: 'Yes I love how Python does that',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 1 week ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '4',
@@ -243,16 +85,8 @@ const conversations = [
         imageAlt: 'Ben Smith',
         title: 'ChatRoom 4',
         createdAt: formatDate(0, 0, 0, 0), // ~3 hours ago
-        latestMessageText: 'Thanks for cathching that.',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // ~3 hours ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '5',
@@ -260,16 +94,8 @@ const conversations = [
         imageAlt: 'Douglas Johannasen',
         title: 'ChatRoom 5',
         createdAt: formatDate(0, 0, 0, 0), // 30 mins ago
-        latestMessageText: 'No it does not',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 30 mins ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '6',
@@ -277,16 +103,8 @@ const conversations = [
         imageAlt: 'Jacob Manly',
         title: 'ChatRoom 6',
         createdAt: formatDate(0, 0, 0, 0), // 3 secs ago
-        latestMessageText: 'Just be very careful doing that',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 3 secs ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '7',
@@ -294,16 +112,8 @@ const conversations = [
         imageAlt: 'Stacey Wilson',
         title: 'ChatRoom 7',
         createdAt: formatDate(0, 0, 0, 0), // 30 mins ago
-        latestMessageText: 'Awesome!!! Congratulations!!!!',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 30 mins ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '8',
@@ -311,16 +121,8 @@ const conversations = [
         imageAlt: 'Stan George',
         title: 'ChatRoom 8',
         createdAt: formatDate(0, 0, 0, 0), // 1 week ago
-        latestMessageText: 'Good job',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 1 week ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     },
     { 
         id: '9',
@@ -328,16 +130,8 @@ const conversations = [
         imageAlt: 'Sarah Momes',
         title: 'ChatRoom 9',
         createdAt: formatDate(0, 0, 0, 0), // 1 year ago
-        latestMessageText: 'Thank you. I appreciate that.',
-        messages: [
-            {
-                imageUrl: null,
-                imageAlt: null,
-                messageText: 'Hi',
-                createdAt: formatDate(0, 0, 0, 0), // 1 year ago
-                isMyMessage: true
-            }
-        ]
+        latestMessageText: 'Unused Room',
+        messages: []
     }
 ];
 

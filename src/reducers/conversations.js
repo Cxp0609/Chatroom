@@ -126,6 +126,9 @@ const conversationsReducer = (state = initialState, action) => {
             }
         )
 
+        // Update latest message preview text
+        newState.selectedConversation.latestMessageText = action.textMessage;
+        
         // Update the conversation in the conversations array
         const conversationIndex = newState.conversations.findIndex(c => c.id === newState.selectedConversation.id);
         newState.conversations[conversationIndex] = newState.selectedConversation;
@@ -149,6 +152,9 @@ const conversationsReducer = (state = initialState, action) => {
              }
          )
 
+         // Update latest message preview text
+         newState.selectedConversation.latestMessageText = action.messageText;
+         
          // Update the conversation in the conversations array
          const conversationIndex = newState.conversations.findIndex(c => c.id === newState.selectedConversation.id);
          newState.conversations[conversationIndex] = newState.selectedConversation;
